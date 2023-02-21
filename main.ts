@@ -31,6 +31,6 @@ basic.forever(function () {
     } else if (LFSR == 1) {
         soft_right()
     } else {
-    	
+        all_ahead()
     }
 })
