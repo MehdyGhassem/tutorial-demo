@@ -23,7 +23,7 @@ function avoidance_function () {
     basic.pause(100)
     hard_right()
     while (Avoiding == 1) {
-        if (maqueen.Ultrasonic(PingUnit.Centimeters) < 10) {
+        if (maqueen.Ultrasonic(PingUnit.Centimeters) < 15) {
             soft_right()
         } else {
             soft_left()
@@ -40,7 +40,7 @@ function hard_left () {
     basic.pause(100)
 }
 basic.forever(function () {
-    if (maqueen.Ultrasonic(PingUnit.Centimeters) < 10) {
+    if (maqueen.Ultrasonic(PingUnit.Centimeters) < 15) {
         avoidance_function()
     }
     LFSL += maqueen.readPatrol(maqueen.Patrol.PatrolLeft)
