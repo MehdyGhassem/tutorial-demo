@@ -15,7 +15,7 @@ function hard_right () {
 }
 function soft_right () {
     maqueen.motorRun(maqueen.Motors.M1, maqueen.Dir.CW, 70)
-    maqueen.motorRun(maqueen.Motors.M2, maqueen.Dir.CW, 30)
+    maqueen.motorRun(maqueen.Motors.M2, maqueen.Dir.CW, 25)
 }
 function avoidance_function () {
     Avoiding = 1
