@@ -2,7 +2,7 @@ let Avoiding = 0
 let LFSL = 0
 let LFSR = 0
 function soft_left () {
-    maqueen.motorRun(maqueen.Motors.M1, maqueen.Dir.CW, 30)
+    maqueen.motorRun(maqueen.Motors.M1, maqueen.Dir.CW, 20)
     maqueen.motorRun(maqueen.Motors.M2, maqueen.Dir.CW, 60)
 }
 function all_ahead () {
@@ -15,7 +15,7 @@ function hard_right () {
 }
 function soft_right () {
     maqueen.motorRun(maqueen.Motors.M1, maqueen.Dir.CW, 70)
-    maqueen.motorRun(maqueen.Motors.M2, maqueen.Dir.CW, 25)
+    maqueen.motorRun(maqueen.Motors.M2, maqueen.Dir.CW, 20)
 }
 function avoidance_function () {
     Avoiding = 1
